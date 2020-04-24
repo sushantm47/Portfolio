@@ -6,6 +6,10 @@
 
 // font-family: 'Merienda', cursive;
 
+// font-family: 'Roboto Condensed', sans-serif;
+
+// font-family: 'Roboto', sans-serif;
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +40,7 @@ p {
 }
 
 section {
-  padding: 6rem;
+  padding: 6rem 0;
 }
 
 img {
@@ -125,12 +129,12 @@ header {
 
 li {
   margin: 0 2rem;
-  font-family: "Merienda", cursive;
   padding: 1rem;
+  font-family: "Roboto ", sans-serif;
 }
 
 .nav-link {
-  font-family: "Merienda", cursive;
+  font-family: "Merienda", cursive; /*---------------*/
   font-size: 5rem;
   padding: 1rem;
 }
@@ -360,6 +364,7 @@ li {
 
 /*timeline*/
 .timeline {
+  font-family: Roboto, sans-serif;
   & ul {
     border-left: 4px solid #ffe838;
     border-radius: 0.8rem;
@@ -425,7 +430,6 @@ form {
   margin: 0 auto;
   & label {
     font-size: 1.5rem;
-    margin: 1rem 0;
   }
 }
 
@@ -480,6 +484,7 @@ input[type="submit"] {
   border-radius: 100%;
   display: flex;
   animation: pulse 2s infinite;
+  cursor: pointer;
 }
 
 .up i {
@@ -497,5 +502,116 @@ input[type="submit"] {
   }
   100% {
     box-shadow: 0 0 0 0 rgba(253, 87, 191, $alpha: 0);
+  }
+}
+
+// media Queries
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../images/sitebg2.jpg") no-repeat center fixed;
+    background-size: cover;
+  }
+  .landing-text {
+    & h1 {
+      font-size: 8rem;
+    }
+    & h6 {
+      font-size: 1.7rem;
+    }
+  }
+  .nav-list {
+    flex-direction: column;
+    & li {
+      margin: 2rem 0;
+    }
+  }
+  .nav-link {
+    font-size: 2.5rem;
+  }
+  .about-heading {
+    & h1 {
+      font-size: 8rem;
+    }
+  }
+  .section-heading h1 {
+    font-size: 3rem;
+  }
+  .about-details {
+    & .nav-list {
+      flex-direction: row;
+    }
+    & li {
+      margin: 0 2rem;
+    }
+  }
+  .icon-container {
+    width: 7rem;
+    height: 7rem;
+    & i {
+      font-size: 4rem;
+    }
+  }
+  .timeline {
+    & ul {
+      margin: 0 0 0 auto;
+    }
+    & .date::before {
+      left: -22rem;
+    }
+    & .date::after {
+      left: -8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggler {
+    top: 2rem;
+    right: 2rem;
+  }
+  .landing-text {
+    & h1 {
+      font-size: 3.5rem;
+    }
+    & h6 {
+      font-size: 1.5rem;
+    }
+  }
+  .about {
+    & .container {
+      flex-direction: column;
+    }
+  }
+  .profile-img {
+    margin: 0 0 7rem 0;
+  }
+  .portfolio {
+    &-item {
+      flex-direction: column;
+    }
+    &-img {
+      margin: 0 0 2rem 0;
+      order: 1;
+    }
+    &-description {
+      order: 2;
+      margin: 0;
+    }
+  }
+
+  .timeline {
+    & p {
+      font-size: 1.4rem;
+    }
+    .date::before {
+      font-size: 1.4rem;
+    }
+  }
+  form {
+    width: 100%;
+  }
+  up {
+    right: 2rem;
   }
 }

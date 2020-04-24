@@ -23,7 +23,7 @@ p {
   font-weight: 300; }
 
 section {
-  padding: 6rem; }
+  padding: 6rem 0; }
 
 img {
   width: 100%; }
@@ -101,11 +101,12 @@ header {
 
 li {
   margin: 0 2rem;
-  font-family: "Merienda", cursive;
-  padding: 1rem; }
+  padding: 1rem;
+  font-family: "Roboto ", sans-serif; }
 
 .nav-link {
   font-family: "Merienda", cursive;
+  /*---------------*/
   font-size: 5rem;
   padding: 1rem; }
 
@@ -297,52 +298,52 @@ li {
     color: #2767cd; }
 
 /*timeline*/
-.timeline ul {
-  border-left: 4px solid #ffe838;
-  border-radius: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  position: relative;
-  padding: 5rem;
-  list-style: none;
-  text-align: left;
-  width: 70%; }
-
-.timeline h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  opacity: 0.3; }
-
-.timeline .date {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  position: relative; }
-  .timeline .date:last-of-type {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border: none; }
-  .timeline .date::before, .timeline .date::after {
-    position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%); }
-  .timeline .date::before {
-    content: attr(data-date);
-    left: -21rem;
-    text-align: right;
-    min-width: 12rem;
-    font-size: 1.5rem; }
-  .timeline .date::after {
-    content: "";
-    box-shadow: 0 0 0 4px #fd57bf;
-    border-radius: 100%;
-    left: -8rem;
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: #313534; }
+.timeline {
+  font-family: Roboto, sans-serif; }
+  .timeline ul {
+    border-left: 4px solid #ffe838;
+    border-radius: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%; }
+  .timeline h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: 0.3; }
+  .timeline .date {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative; }
+    .timeline .date:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border: none; }
+    .timeline .date::before, .timeline .date::after {
+      position: absolute;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%); }
+    .timeline .date::before {
+      content: attr(data-date);
+      left: -21rem;
+      text-align: right;
+      min-width: 12rem;
+      font-size: 1.5rem; }
+    .timeline .date::after {
+      content: "";
+      box-shadow: 0 0 0 4px #fd57bf;
+      border-radius: 100%;
+      left: -8rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: #313534; }
 
 /*contact*/
 .contact {
@@ -352,8 +353,7 @@ form {
   width: 70%;
   margin: 0 auto; }
   form label {
-    font-size: 1.5rem;
-    margin: 1rem 0; }
+    font-size: 1.5rem; }
 
 input,
 select,
@@ -401,7 +401,8 @@ input[type="submit"] {
   right: 5rem;
   border-radius: 100%;
   display: flex;
-  animation: pulse 2s infinite; }
+  animation: pulse 2s infinite;
+  cursor: pointer; }
 
 .up i {
   color: #16162d;
@@ -415,3 +416,66 @@ input[type="submit"] {
     box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0); }
   100% {
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0); } }
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../images/sitebg2.jpg") no-repeat center fixed;
+    background-size: cover; }
+  .landing-text h1 {
+    font-size: 8rem; }
+  .landing-text h6 {
+    font-size: 1.7rem; }
+  .nav-list {
+    flex-direction: column; }
+    .nav-list li {
+      margin: 2rem 0; }
+  .nav-link {
+    font-size: 2.5rem; }
+  .about-heading h1 {
+    font-size: 8rem; }
+  .section-heading h1 {
+    font-size: 3rem; }
+  .about-details .nav-list {
+    flex-direction: row; }
+  .about-details li {
+    margin: 0 2rem; }
+  .icon-container {
+    width: 7rem;
+    height: 7rem; }
+    .icon-container i {
+      font-size: 4rem; }
+  .timeline ul {
+    margin: 0 0 0 auto; }
+  .timeline .date::before {
+    left: -22rem; }
+  .timeline .date::after {
+    left: -8rem; } }
+
+@media screen and (max-width: 600px) {
+  .menu-toggler {
+    top: 2rem;
+    right: 2rem; }
+  .landing-text h1 {
+    font-size: 3.5rem; }
+  .landing-text h6 {
+    font-size: 1.5rem; }
+  .about .container {
+    flex-direction: column; }
+  .profile-img {
+    margin: 0 0 7rem 0; }
+  .portfolio-item {
+    flex-direction: column; }
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+    order: 1; }
+  .portfolio-description {
+    order: 2;
+    margin: 0; }
+  .timeline p {
+    font-size: 1.4rem; }
+  .timeline .date::before {
+    font-size: 1.4rem; }
+  form {
+    width: 100%; }
+  up {
+    right: 2rem; } }
