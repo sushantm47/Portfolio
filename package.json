@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushantm47/Portfolio.git"
+  },
+  "author": "sushant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushantm47/Portfolio/issues"
+  },
+  "homepage": "https://github.com/sushantm47/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
