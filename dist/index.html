@@ -21,6 +21,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -35,19 +42,33 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#services" class="nav-link">services</a></li>
           <li><a href="#portfolio" class="nav-link">portfolio</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/10RwwnREwNJQhtlVV2oExW_lelVzsRYI3DvZrGpeVTSI/edit?usp=sharing"
+              class="nav-link"
+              target="_blank"
+              style="border: 2px solid white; border-radius: 1px;"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="landing-text" id="1">
-        <h1>Sushant Mudalgi</h1>
-        <h6>Full stack Web Developer</h6>
+        <h6>Hello, I'm</h6>
+        <h1>
+          Sushant Mudalgi
+        </h1>
+        <h6 data-aos="fade-in" data-aos-delay="300">
+          I'm a Full-stack Web Developer.
+        </h6>
       </div>
     </header>
     <section class="about" id="about">
       <div class="container">
         <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-          <img src="images/profile.jpeg" alt="" srcset="" />
+          <img src="images/clipart.jpg" alt="" srcset="" />
         </div>
         <div class="about-details" data-aos="fade-left" data-aos-delay="600">
           <div class="about-heading">
@@ -55,10 +76,12 @@
             <h6>Myself</h6>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
-            quam, iure laborum, consequatur eveniet excepturi impedit quidem ut
-            vero voluptate nulla itaque, neque accusamus sequi deserunt eos
-            tempora voluptas ad?
+            Hello there! I am Sushant Mudalgi.I'm a Web Developer.<br />
+            Building state-of-the-art, easy to use, user-friendly websites and
+            applications is truly a passion of mine.<br />
+            In addition to my knowledge base, I actively seek out new
+            technologies and stay up-to-date on industry trends and
+            advancements.
           </p>
           <div class="social-media">
             <ul class="nav-list">
@@ -81,6 +104,89 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="skill">
+          <div class="skill-descriptions">
+            Here are the technologies that I have been working on
+          </div>
+          <div class="skillicons">
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-react-original colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>React</p>
+              </span>
+            </div>
+
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-css3-plain colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>CSS3</p>
+              </span>
+            </div>
+
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-bootstrap-plain colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>Bootstrap</p>
+              </span>
+            </div>
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-mongodb-plain colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>Mongodb</p>
+              </span>
+            </div>
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-html5-plain colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>HTML5</p>
+              </span>
+            </div>
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-nodejs-plain colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>Node</p>
+              </span>
+            </div>
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-angularjs-plain colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>Angular</p>
+              </span>
+            </div>
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-sass-original colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>Sass</p>
+              </span>
+            </div>
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>Javascript</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="services" id="services">
@@ -96,10 +202,11 @@
             </div>
             <h1>Web Design</h1>
             <p>
-              Aesthetically pleasing website is more than just pixelated
-              information, right? In my hands, every project deserves going for
-              the extra mile finding the exact right color scheme, layout and
-              font.
+              Web design is important because it impacts how your audience
+              perceives your brand.The impression you make on them can either
+              get them to remain on your page and learn about your business or
+              leave your page and turn to a competitor.I focus on designing a
+              good webpage that helps you keep your leads on your page.
             </p>
           </div>
           <div class="skill" data-aos="fade-in" data-aos-delay="600">
@@ -108,20 +215,11 @@
             </div>
             <h1>Web Development</h1>
             <p>
-              Lately I prefer to build web with Vue, utilising Vuetify library
-              to create polished UIs. Vue has become my favourite framework
-              since it optimises performance (no one likes laggy apps!) and
-              makes dynamic content rendering a breeze
-            </p>
-          </div>
-          <div class="skill" data-aos="fade-in" data-aos-delay="900">
-            <div class="icon-container">
-              <i class="fas fa-chart-bar"></i>
-            </div>
-            <h1>Product Strategy</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              soluta?
+              I consider Web development services help your company to increase
+              product knowledge, maintain communication between you and
+              potential clients, sell your products or services, generate leads
+              for the business, and increase the popularity of your company and
+              much more.
             </p>
           </div>
         </div>
@@ -133,11 +231,12 @@
           <h1>Portfolio</h1>
           <h6>view some of my recent work</h6>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item" style="overflow: hidden;">
           <div
             class="portfolio-img has-margin-right"
             data-aos="fade-right"
             data-aos-delay="300"
+            style="overflow: hidden;"
           >
             <img src="images/portitem1.jpeg" alt="img" />
           </div>
@@ -156,17 +255,20 @@
             <a href="#" class="cta">View Details</a>
           </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item" style="overflow: hidden;">
           <div
             class="portfolio-description has-margin-right"
             data-aos="fade-right"
             data-aos-delay="900"
           >
-            <h6>Web Design</h6>
-            <h1>Product layout</h1>
+            <h6>Web Development</h6>
+            <h1>CLEAN KLE</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              soluta?
+              A website for university where students can report issues
+              regarding cleanliness by uploading a photo to support their claim.
+              It also has a admin console where administrator can view the
+              problems posted by students and marks the issues resolved once
+              they are taken care of
             </p>
             <a href="#" class="cta">View Details</a>
           </div>
@@ -174,7 +276,7 @@
             <img src="images/portitem2.jpeg" alt="img" />
           </div>
         </div>
-        <div class="portfolio-item">
+        <!-- <div class="portfolio-item" style="overflow: hidden;">
           <div
             class="portfolio-img has-margin-right"
             data-aos="fade-right"
@@ -195,10 +297,10 @@
             </p>
             <a href="#" class="cta">View Details</a>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
-    <section class="experience" id="experience">
+    <!-- <section class="experience" id="experience">
       <div class="container">
         <div class="section-heading">
           <h1>Work experience</h1>
@@ -230,7 +332,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="contact" id="contact">
       <div class="container">
         <div class="section-heading">
@@ -238,7 +340,7 @@
           <h6>Let's work together</h6>
         </div>
         <form data-aos="fade-up" data-aos-delay="300">
-          <label for="name">Name:</label>
+          <!-- <label for="name">Name:</label> -->
           <input
             type="text"
             name="name"
@@ -246,7 +348,7 @@
             placeholder="Enter your name"
             required
           />
-          <label for="email">Email:</label>
+          <!-- <label for="email">Email:</label> -->
           <input
             type="email"
             name="email"
@@ -254,14 +356,20 @@
             placeholder="Enter your email "
             required
           />
-          <label for="service">Services</label>
-          <select name="service" id="service">
+          <!-- <label for="service">Services</label>
+           <select name="service" id="service">
             <option value="">Web Design</option>
             <option value="">Web Development</option>
             <option value="">Web Design/Development </option>
-          </select>
-          <label for="subject">Subject:</label>
-          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+          </select> -->
+          <!-- <label for="subject">Subject:</label> -->
+          <textarea
+            name="subject"
+            id="subject"
+            cols="10"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
           <div class="button">
             <input type="submit" value="Submit" id="up" />
           </div>
@@ -269,11 +377,17 @@
       </div>
     </section>
     <footer class="copyright">
-      <div id="up" class="up">
+      <button id="btnScrollToTop" class="up" href="#">
         <i class="fas fa-chevron-up"></i>
-      </div>
+      </button>
       <p>&copy; 2020 Sushant Mudalgi</p>
     </footer>
+    <script>
+      const btnScrollToTop = document.querySelector("#btnScrollToTop");
+      btnScrollToTop.addEventListener("click", function () {
+        $("html,body").animate({ scrollTop: 0 }, "slow");
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./main.js"></script>
