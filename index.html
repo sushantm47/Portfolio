@@ -26,6 +26,7 @@
     />
 
     <!-- icons -->
+    <link rel="icon" href="dist/images/sl.png" />
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
@@ -34,7 +35,7 @@
   </head>
   <body>
     <header>
-      <div class="menu-toggler">
+      <div class="menu-toggler" style="position: fixed;">
         <div class="bar half start"></div>
         <div class="bar"></div>
         <div class="bar half end"></div>
@@ -59,11 +60,11 @@
         </ul>
       </nav>
       <div class="landing-text" id="1">
-        <h6>Hello, I'm</h6>
+        <h6 data-aos="fade-in" data-aos-delay="300">Hello, I'm</h6>
         <h1>
           Sushant Mudalgi
         </h1>
-        <h6 data-aos="fade-in" data-aos-delay="300">
+        <h6 data-aos="fade-in" data-aos-delay="600">
           I'm a Full-stack Web Developer.
         </h6>
       </div>
@@ -89,18 +90,22 @@
           <div class="social-media">
             <ul class="nav-list">
               <li>
-                <a href="#" class="icon-link"
-                  ><i class="fab fa-facebook-square"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="icon-link"
-                  ><i class="fab fa-twitter-square"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="icon-link"
+                <a href="https://github.com/sushantm47" class="icon-link"
                   ><i class="fab fa-github-square"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sushant-mudalgi-465999172/"
+                  class="icon-link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/sushant.mudalgi"
+                  class="icon-link"
+                  ><i class="fab fa-facebook-square"></i
                 ></a>
               </li>
             </ul>
@@ -112,7 +117,15 @@
           <div class="skill-descriptions">
             Here are the technologies that I have been working on
           </div>
-          <div class="skillicons">
+          <div class="skillicons" data-aos="fade-in" data-aos-delay="900">
+            <div class="skillicon-box">
+              <div class="skillicon-box-icon">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+              <span class="skillicon-title">
+                <p>Javascript</p>
+              </span>
+            </div>
             <div class="skillicon-box">
               <div class="skillicon-box-icon">
                 <i class="devicon-react-original colored"></i>
@@ -124,27 +137,27 @@
 
             <div class="skillicon-box">
               <div class="skillicon-box-icon">
-                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-angularjs-plain colored"></i>
               </div>
               <span class="skillicon-title">
-                <p>CSS3</p>
+                <p>Angular</p>
               </span>
             </div>
 
             <div class="skillicon-box">
               <div class="skillicon-box-icon">
-                <i class="devicon-bootstrap-plain colored"></i>
+                <i class="devicon-nodejs-plain colored"></i>
               </div>
               <span class="skillicon-title">
-                <p>Bootstrap</p>
+                <p>Node</p>
               </span>
             </div>
             <div class="skillicon-box">
               <div class="skillicon-box-icon">
-                <i class="devicon-mongodb-plain colored"></i>
+                <i class="devicon-express-original"></i>
               </div>
               <span class="skillicon-title">
-                <p>Mongodb</p>
+                <p>Express</p>
               </span>
             </div>
             <div class="skillicon-box">
@@ -157,18 +170,10 @@
             </div>
             <div class="skillicon-box">
               <div class="skillicon-box-icon">
-                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
               </div>
               <span class="skillicon-title">
-                <p>Node</p>
-              </span>
-            </div>
-            <div class="skillicon-box">
-              <div class="skillicon-box-icon">
-                <i class="devicon-angularjs-plain colored"></i>
-              </div>
-              <span class="skillicon-title">
-                <p>Angular</p>
+                <p>CSS3</p>
               </span>
             </div>
             <div class="skillicon-box">
@@ -181,10 +186,10 @@
             </div>
             <div class="skillicon-box">
               <div class="skillicon-box-icon">
-                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
               </div>
               <span class="skillicon-title">
-                <p>Javascript</p>
+                <p>Bootstrap</p>
               </span>
             </div>
           </div>
@@ -218,11 +223,11 @@
             </div>
             <h1>Web Development</h1>
             <p>
-              I consider Web development services help your company to increase
-              product knowledge, maintain communication between you and
-              potential clients, sell your products or services, generate leads
-              for the business, and increase the popularity of your company and
-              much more.
+              Web development services help a company to increase product
+              knowledge, maintain communication between company and potential
+              clients, sell your products or services, generate leads for the
+              business, and increase the popularity of your company and much
+              more.
             </p>
           </div>
         </div>
@@ -236,33 +241,9 @@
         </div>
         <div class="portfolio-item" style="overflow: hidden;">
           <div
-            class="portfolio-img has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="300"
-            style="overflow: hidden;"
-          >
-            <img src="dist/images/portitem1.jpeg" alt="img" />
-          </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="600"
-          >
-            <h6>Web Development</h6>
-            <h1>Blog Website</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quasi, soluta?
-            </p>
-            <a href="#" class="cta">View Details</a>
-          </div>
-        </div>
-        <div class="portfolio-item" style="overflow: hidden;">
-          <div
             class="portfolio-description has-margin-right"
             data-aos="fade-right"
-            data-aos-delay="900"
+            data-aos-delay="300"
           >
             <h6>Web Development</h6>
             <h1>CLEAN KLE</h1>
@@ -275,10 +256,44 @@
             </p>
             <a href="#" class="cta">View Details</a>
           </div>
-          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
             <img src="dist/images/portitem2.jpeg" alt="img" />
           </div>
         </div>
+        <div class="portfolio-item" style="overflow: hidden;">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="900"
+            style="overflow: hidden; padding: 1px; background: url();"
+          >
+            <img
+              src="dist/images/Screenshot from 2020-04-29 17-44-28.png"
+              alt="img"
+              style="width: 100%; height: auto;"
+            />
+          </div>
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="1200"
+          >
+            <h6>Web Development</h6>
+            <h1>Covid-19 Status Tracker</h1>
+            <p>
+              A web app for fetching real time details of covid-19 virus i.e
+              number of confirmed, recovered and death cases, globally and also
+              categorization based on country.
+            </p>
+            <a
+              href="https://sushantm47.github.io/deploy-react/"
+              target="_blank"
+              class="cta"
+              >View site</a
+            >
+          </div>
+        </div>
+
         <!-- <div class="portfolio-item" style="overflow: hidden;">
           <div
             class="portfolio-img has-margin-right"
@@ -340,7 +355,6 @@
       <div class="container">
         <div class="section-heading" style="margin-bottom: 5rem;">
           <h1>Contact</h1>
-          <h6>Let's work together</h6>
         </div>
         <form data-aos="fade-up" data-aos-delay="300">
           <!-- <label for="name">Name:</label> -->
